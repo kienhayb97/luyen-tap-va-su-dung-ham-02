@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nhap() {
+        let nhapGiaTriMang = prompt("nhap so luong phan tu")
+        let mang = [];
+        for (let i = 0; i < nhapGiaTriMang; i++) {
+            let so = prompt("nhap gia tri trong mang")
+            mang.push(so)
+
+        }
+        return mang
+    }
+
+    function kiemtra(mang) {
+        let count = 0;
+        let nhapkiemtra = prompt("nhap gia tri ban muon kiem tra")
+        for (let i = 0; i < mang.length; i++) {
+            if (nhapkiemtra == mang[i]) {
+            count++
+            }
+
+        }if (count==0)
+            return -1;
+        else
+        return count
+    }
+    let mang=nhap();
+    alert(kiemtra(mang))
+</script>
+</body>
+</html>

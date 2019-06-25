@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=prompt("nhap ban kinh hin tron")
+    function dienTichHinhTron(dientich) {
+        dientich=(nhap*nhap)*Math.PI
+        return dientich
+    }
+    function chuViHinhTron(chuvi) {
+        chuvi=nhap*2*Math.PI
+        return chuvi
+    }
+document.writeln(dienTichHinhTron(nhap)+"<br>"+chuViHinhTron(nhap))
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function nhapVao() {
+        let daySo = [];
+        let soPhanTu = parseInt(prompt("nhap vao so phan tu"));
+        for (let i = 0; i < soPhanTu; i++) {
+            let so = parseInt(prompt("nhap vao so nguyen thu " + i));
+            daySo.push(so)
+        }
+        return daySo;
+    }
+
+    function daoDay(daySo) {
+        let dayMoi = []
+        for (let i = 0; i < daySo.length ; i++){
+            dayMoi[i] = daySo[daySo.length-1-i];
+        }
+        return dayMoi
+
+    }
+    let day = nhapVao();
+    alert(daoDay(day))
+
+</script>
+</body>
+</html>

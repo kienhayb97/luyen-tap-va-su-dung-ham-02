@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function nhapmang() {
+     let mang=[]
+      let nhapso=prompt("nhap so luong mang")
+      for (let i=0;i<nhapso;i++){
+          let so=prompt("nhap so phan tu mang")
+          mang.push(so)
+      }return mang
+
+  }
+  function kiemTra(mang) {
+      let mangMoi=[];
+      for (let i=0;i<mang.length;i++){
+          mangMoi[i]=mang[mang.length-1-i]
+
+      }
+      return mangMoi
+  }
+  let day=nhapmang();
+    alert(kiemTra(day))
+</script>
+</body>
+</html>
